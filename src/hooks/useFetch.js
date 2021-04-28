@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { csv } from "d3-fetch";
 import { useState, useEffect } from "react";
 const useFetch = (url) => {
@@ -10,6 +11,7 @@ const useFetch = (url) => {
   }
   useEffect(() => {
     fetchUrl();
+    eslint-disable-next-line 
   }, []);
   return [data, loading];
 };

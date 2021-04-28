@@ -307,7 +307,7 @@ const Overview = () => {
                     </thead>
                     <tbody>
                         <tr>
-                            <td scope="row">state</td>
+                            <td>state</td>
                             <td>Key</td>
                             <td>Name of the state</td>
                         </tr>
