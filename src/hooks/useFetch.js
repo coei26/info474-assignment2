@@ -11,7 +11,6 @@ const useFetch = (url) => {
   }
   useEffect(() => {
     fetchUrl();
-    eslint-disable-next-line 
   }, []);
   return [data, loading];
 };
