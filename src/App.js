@@ -4,26 +4,21 @@ import Plot from "react-plotly.js";
 
 
 const App = () => {
-    const [data, loading] = useFetch(
+    const [data] = useFetch(
         "https://raw.githubusercontent.com/fivethirtyeight/data/master/hate-crimes/hate_crimes.csv"
     );
     console.log((data));
-    const size = 500;
     
     let states = getColumn(data, "state");
     console.log(states);
-    // Views 1-3
     let hate_crimes = getColumn(data, "avg_hatecrimes_per_100k_fbi");
     console.log(hate_crimes);
     let trump = getColumn(data, "share_voters_voted_trump");
     console.log(trump);
-    // View 4
     let education = getColumn(data, "share_population_with_high_school_degree");
     console.log(education);
-    // View 5
     let income = getColumn(data, "median_household_income");
     console.log(income);
-    // View 6
     let gini = getColumn(data, "gini_index");
     console.log(gini);
     return (
